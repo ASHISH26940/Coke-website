@@ -1,7 +1,12 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(./assests/font/Gilroy-Light.ttf);
+}
+
 *{
     padding:0;
     margin:0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Gilroy";
     box-sizing: border-box;
 }
 html,body{
@@ -12,7 +17,7 @@ html,body{
 #main{
     width:100%;
     min-height:100vh;
-    background-color: #222;
+    background-color: #111;
 }
 #nav a{
     display: flex;
@@ -31,7 +36,7 @@ html,body{
     color:white;
 }
 #nav a i{
-    margin-right: 1.5vw;
+    margin-right: 1vw;
     /* color:white; */
 }
 
@@ -46,18 +51,79 @@ html,body{
 
 #center #logo {
     display: flex;
+    align-items: center;
 }
 
 #center #logo img{
     object-fit: cover;
-    width:130px;
-    height:10vh;
+    width:120px;
     mix-blend-mode: multiply;
-    margin:-2vh 4vh;
+    margin:0 20px;
 }
 
 #center #logo .line{
-    width:20vw;
-    height:.3vh;
+    width:130px;
+    height:.1vh;
     background-color: rgba(220,14,14);
+}
+
+#center a{
+    white-space: nowrap;
+}
+
+/* hero section */
+
+#hero{
+    width:100%;
+    min-height:90vh;
+    display: flex;
+    align-items: center;
+}
+
+#left{
+    width:calc(100%/3);
+    min-height: inherit;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 3vw;
+    line-height: 1;
+    
+}
+#ncenter{
+    width:calc(100%/3);
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#right{
+    width:calc(100%/3);
+    min-height: inherit;
+    background-color: pink;
+
+}
+#ncenter #tomb{
+    width:70%;
+    min-height:70vh;
+    background-color:goldenrod ;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+}
+
+#left h1{
+    font-size: 2.5vw;
+    margin-bottom:1vw;
+    
+}
+#left p{
+    font-weight:100;
+    font-size:.9vw;
+    width:80%;
+}
+#left span{
+    color:red;
+    font-weight: 300;
 }
